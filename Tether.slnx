@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Tether/Tether.vcxproj" Id="15117845-3462-48f0-a975-0a03b7261ae8" />
+</Solution>
