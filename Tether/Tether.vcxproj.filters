@@ -39,10 +39,10 @@
     <ClCompile Include="src\data\catalog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\data\equipment.cpp">
+    <ClCompile Include="tether.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tether.cpp">
+    <ClCompile Include="tests\tests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -75,6 +75,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\tether.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\calc\consts.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

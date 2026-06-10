@@ -27,12 +27,13 @@
     <ClCompile Include="src\core\algorithm_utils.cpp" />
     <ClCompile Include="src\core\math_utils.cpp" />
     <ClCompile Include="src\data\catalog.cpp" />
-    <ClCompile Include="src\data\equipment.cpp" />
+    <ClCompile Include="tests\tests.cpp" />
     <ClCompile Include="tether.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\calc\breaker_selection.hpp" />
     <ClInclude Include="src\calc\cable_selection.hpp" />
+    <ClInclude Include="src\calc\consts.hpp" />
     <ClInclude Include="src\calc\current.hpp" />
     <ClInclude Include="src\calc\motor_selection.hpp" />
     <ClInclude Include="src\calc\voltage.hpp" />

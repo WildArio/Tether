@@ -1,3 +1,4 @@
+#include <optional>
 #include <vector>
 #include "catalog.hpp"
 
@@ -5,7 +6,7 @@ namespace Tether::Data {
     namespace {
 
         // Breaker catalog (generation for now)
-        std::vector<Breaker> makeBreakerCatalog() {
+        std::vector<Breaker> createBreakerCatalog() {
             std::vector<Breaker> result;
 
             // Standard nominal currents (small and large)
@@ -52,26 +53,26 @@ namespace Tether::Data {
             return result;
         }
 
-        const std::vector<Breaker> breakerCatalog = makeBreakerCatalog();
+        const std::vector<Breaker> breakerCatalog = createBreakerCatalog();
 
         // Cable catalog (manual for now)
         const std::vector<Cable> cableCatalog = {
             // cross_section(m²), max_current(A), resistance_per_meter(Ohm/m)
-            { 1.5e-6,              19,          12.3 / 1000.0 },
-            { 2.5e-6,              25,          7.38 / 1000.0 },
-            { 4.0e-6,              35,          4.60 / 1000.0 },
-            { 6.0e-6,              42,          3.07 / 1000.0 },
-            { 10.0e-6,             55,          1.84 / 1000.0 },
-            { 16.0e-6,             75,          1.15 / 1000.0 },
-            { 25.0e-6,             95,          0.74 / 1000.0 },
-            { 35.0e-6,             120,         0.52 / 1000.0 },
-            { 50.0e-6,             145,         0.37 / 1000.0 },
-            { 70.0e-6,             180,         0.26 / 1000.0 },
-            { 95.0e-6,             220,         0.194 / 1000.0 },
-            { 120.0e-6,            260,         0.153 / 1000.0 },
-            { 150.0e-6,            305,         0.122 / 1000.0 },
-            { 185.0e-6,            350,         0.099 / 1000.0 },
-            { 240.0e-6,            445,         0.077 / 1000.0 }
+            { 1.5e-6,       19,         12.3 / 1000.0 },
+            { 2.5e-6,       25,         7.38 / 1000.0 },
+            { 4.0e-6,       35,         4.60 / 1000.0 },
+            { 6.0e-6,       42,         3.07 / 1000.0 },
+            { 10.0e-6,      55,         1.84 / 1000.0 },
+            { 16.0e-6,      75,         1.15 / 1000.0 },
+            { 25.0e-6,      95,         0.74 / 1000.0 },
+            { 35.0e-6,      120,        0.52 / 1000.0 },
+            { 50.0e-6,      145,        0.37 / 1000.0 },
+            { 70.0e-6,      180,        0.26 / 1000.0 },
+            { 95.0e-6,      220,        0.194 / 1000.0 },
+            { 120.0e-6,     260,        0.153 / 1000.0 },
+            { 150.0e-6,     305,        0.122 / 1000.0 },
+            { 185.0e-6,     350,        0.099 / 1000.0 },
+            { 240.0e-6,     445,        0.077 / 1000.0 }
         };
 
         // Motor catalog (manual for now)
@@ -105,8 +106,10 @@ namespace Tether::Data {
 
     }
 
-    // Public functions
     std::vector<Breaker> loadBreakerCatalog() { return breakerCatalog; }
-    std::vector<Cable>   loadCableCatalog() { return cableCatalog; }
-    std::vector<Motor>   loadMotorCatalog() { return motorCatalog; }
+    std::vector<Cable> loadCableCatalog() { return cableCatalog; }
+    std::vector<Motor> loadMotorCatalog() { return motorCatalog; }
+
+
+
 }
