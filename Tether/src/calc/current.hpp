@@ -32,7 +32,7 @@ namespace Tether::Calc{
 				[](const T& m, double p) {
 					return m.power < p;
 			}) }; // TODO MOVE TO catalog 
-			assert(false && "MOVE LOWERBOUND IN estimateCurrentByPower");
+			//assert(false && "MOVE LOWERBOUND IN estimateCurrentByPower");
 
 			if (item == catalog.begin()) {
 				return item->nominalCurrent;
