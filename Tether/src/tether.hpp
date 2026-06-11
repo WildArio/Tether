@@ -15,3 +15,10 @@
 // Core utilities
 #include "core/algorithm_utils.hpp"
 #include "core/math_utils.hpp"
+#include "core/io/csv_parser.hpp"
+
+// SCADA
+#include "scada/address_allocator.hpp"
+#include "scada/data_type.hpp"
+#include "scada/st_generator.hpp"
+#include "scada/variable.hpp"

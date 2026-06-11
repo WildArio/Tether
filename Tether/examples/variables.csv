@@ -1,0 +1,138 @@
+Name,Data Type,Description
+Motor_Start,BOOL,Start command for main drive motor
+Valve_Open,BOOL,Open/close solenoid valve for feed line
+Pump_Running,BOOL,Feedback signal from pump contactor
+Alarm_HighTemp,BOOL,Overtemperature alarm status
+System_Ready,BOOL,PLC ready signal for HMI
+Tank_Level_Low,BOOL,Low level switch in storage tank
+Conveyor_Enable,BOOL,Enable signal for conveyor belt
+Fan_Fault,BOOL,Fan failure detected by thermal sensor
+Door_Safety,BOOL,Safety interlock for access door
+Heater_On,BOOL,Heater activation status
+Speed_Setpoint,INT,Target speed for motor controller (RPM)
+Batch_Count,INT,Number of completed production batches
+Recipe_ID,INT,Current recipe selection index
+Operator_Code,INT,Logged-in operator identification number
+Cycle_Time,INT,Duration of current process cycle (seconds)
+Pressure_Limit,INT,Maximum allowed pressure (bar)
+Temperature_Offset,INT,Calibration offset for temperature sensor (°C)
+Vibration_Threshold,INT,Vibration limit before shutdown (mm/s)
+Humidity_Setpoint,INT,Target humidity level (%)
+Flow_Rate_Min,INT,Minimum acceptable flow rate (L/min)
+Counter_Value,UINT,Totalized product count (unsigned)
+Runtime_Hours,UINT,Accumulated operating hours
+Energy_Consumption,UINT,Total kWh used since last reset
+Part_Number,UINT,Current part identifier code
+Odometer_Value,UINT,Distance traveled by mobile unit (meters)
+Fill_Volume,UINT,Volume dispensed in current batch (mL)
+Torque_Limit,UINT,Maximum torque allowed (Nm)
+Pulse_Count,UINT,Encoder pulse count for position tracking
+Duty_Cycle,UINT,PWM duty cycle percentage (0-100)
+Tank_Capacity,UINT,Maximum tank volume (liters)
+Inlet_Temperature,REAL,Process fluid temperature at inlet (°C)
+Outlet_Pressure,REAL,Discharge pressure after pump (bar)
+Flow_Rate,REAL,Instantaneous flow rate (m³/h)
+Viscosity,REAL,Fluid viscosity measurement (cP)
+Density,REAL,Material density (kg/m³)
+pH_Value,REAL,Acidity level of solution
+Humidity,REAL,Ambient relative humidity (%)
+Voltage_PhaseA,REAL,Mains voltage on phase A (V)
+Current_PhaseB,REAL,Load current on phase B (A)
+Power_Factor,REAL,Electrical power factor (cos φ)
+Frequency,REAL,Grid frequency (Hz)
+Tank_Level,REAL,Liquid level in tank (% full)
+Ambient_Temp,REAL,Room temperature (°C)
+Dew_Point,REAL,Condensation temperature (°C)
+Gas_Concentration,REAL,CO2 concentration in exhaust (%)
+Motor_Speed,REAL,Actual motor speed (RPM)
+Torque_Actual,REAL,Measured torque output (Nm)
+Position_X,REAL,Cartesian X-axis position (mm)
+Position_Y,REAL,Cartesian Y-axis position (mm)
+Position_Z,REAL,Cartesian Z-axis position (mm)
+Acceleration,REAL,Linear acceleration (m/s²)
+Status_Word,WORD,16-bit status register from device
+Control_Word,WORD,16-bit control command to drive
+Error_Code,WORD,Device-specific error identifier
+Mode_Select,WORD,Operating mode selector bits
+Digital_Inputs,WORD,Snapshot of 16 digital input states
+Digital_Outputs,WORD,Snapshot of 16 digital output states
+Analog_Status,WORD,Analog I/O module status word
+Communication_Flags,WORD,Fieldbus communication status bits
+Safety_State,WORD,Machine safety circuit state
+Diagnostic_Word,WORD,Extended diagnostic information
+Timer_Preset,WORD,Timer preset value in ticks
+Counter_Preset,WORD,Counter preset value
+Register_Map,WORD,Modbus register mapping selector
+Config_Mask,WORD,Configuration option bitmask
+Status_Register,WORD,General device status register
+Command_Register,WORD,Command interface register
+Event_Flag,WORD,Event occurrence flags
+Alarm_Register,WORD,Active alarm summary register
+Process_Data,WORD,Generic process data container
+Device_ID,WORD,Unique hardware identifier
+Firmware_Version,WORD,Controller firmware version code
+Hardware_Revision,WORD,PCB revision number
+Parameter_Set,WORD,Active parameter set selector
+Operation_Hours,WORD,Hours in operation (low word)
+Fault_History,WORD,Recent fault code log entry
+Maintenance_Timer,WORD,Time until next maintenance (hours)
+Production_Count,WORD,Units produced this shift
+Quality_Score,WORD,Real-time quality metric
+Efficiency_Index,WORD,Process efficiency indicator
+Load_Share,WORD,Load distribution percentage
+Phase_Balance,WORD,Voltage phase balance metric
+Power_Quality,WORD,Harmonic distortion indicator
+Temperature_Word,WORD,Raw temperature sensor reading
+Pressure_Word,WORD,Raw pressure transducer reading
+Flow_Word,WORD,Raw flow meter reading
+Level_Word,WORD,Raw level sensor reading
+Vibration_Word,WORD,Raw vibration sensor reading
+Humidity_Word,WORD,Raw humidity sensor reading
+Gas_Word,WORD,Raw gas sensor reading
+Light_Intensity,WORD,Ambient light level sensor reading
+Sound_Level,WORD,Noise level measurement (dB)
+Proximity_Status,WORD,Proximity sensor state register
+Encoder_Value,WORD,Rotary encoder position count
+Stepper_Position,WORD,Stepper motor step count
+Servo_Status,WORD,Servo drive status word
+Inverter_State,WORD,Variable frequency drive state
+Valve_Position,WORD,Control valve position feedback
+Damper_Opening,WORD,Damper blade position (%)
+Burner_Status,WORD,Combustion system status
+Chiller_State,WORD,Refrigeration unit operational state
+Compressor_Run,WORD,Compressor runtime counter
+Boiler_Pressure,WORD,Steam boiler pressure reading
+Heat_Exchanger,WORD,Heat exchanger efficiency metric
+Filter_Status,WORD,Filter clogging indicator
+Pump_Head,WORD,Fluid head pressure generated
+Fan_Speed,WORD,Blower RPM feedback
+Agitator_Torque,WORD,Mixer agitator torque reading
+Conveyor_Load,WORD,Belt load measurement
+Robot_Joint1,WORD,Articulated robot joint 1 angle
+Robot_Joint2,WORD,Articulated robot joint 2 angle
+Robot_Joint3,WORD,Articulated robot joint 3 angle
+Robot_Joint4,WORD,Articulated robot joint 4 angle
+Robot_Joint5,WORD,Articulated robot joint 5 angle
+Robot_Joint6,WORD,Articulated robot joint 6 angle
+Vision_Result,WORD,Machine vision inspection result
+Barcode_Data,WORD,Scanned barcode value
+RFID_Tag,WORD,Read RFID tag identifier
+GPS_Coordinate,WORD,Encoded GPS position data
+Timestamp_High,DWORD,High 32 bits of 64-bit timestamp
+Timestamp_Low,DWORD,Low 32 bits of 64-bit timestamp
+Total_Energy,DWORD,Accumulated energy consumption (Wh)
+Total_Volume,DWORD,Totalized fluid volume (mL)
+Total_Distance,DWORD,Odometer total distance (mm)
+Product_Count,DWORD,Lifetime production counter
+Error_History,DWORD,64-bit error event log
+Diagnostic_Buffer,DWORD,Extended diagnostic data buffer
+Configuration_Data,DWORD,Full configuration dataset
+Firmware_Image,DWORD,Firmware update image chunk
+Calibration_Data,DWORD,Sensor calibration parameters
+Recipe_Data,DWORD,Complete recipe definition
+Audit_Trail,DWORD,Security audit log entry
+Encryption_Key,DWORD,Cryptographic key material
+Checksum_Value,DWORD,Data integrity checksum
+Memory_Dump,DWORD,Diagnostic memory snapshot
+Register_Block,DWORD,Block of device registers
+Process_History,DWORD,Long-term process data archive
