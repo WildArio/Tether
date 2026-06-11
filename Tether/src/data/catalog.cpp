@@ -109,7 +109,4 @@ namespace Tether::Data {
     std::vector<Breaker> loadBreakerCatalog() { return breakerCatalog; }
     std::vector<Cable> loadCableCatalog() { return cableCatalog; }
     std::vector<Motor> loadMotorCatalog() { return motorCatalog; }
-
-
-
 }
