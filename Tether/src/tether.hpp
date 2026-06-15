@@ -5,12 +5,14 @@
 #include "data/catalog.hpp"
 
 // Calculation modules
-#include "calc/breaker_selection.hpp"
-#include "calc/cable_selection.hpp"
 #include "calc/consts.hpp"
 #include "calc/current.hpp"
-#include "calc/motor_selection.hpp"
 #include "calc/voltage.hpp"
+
+// Calculation modules
+#include "selection/breaker_selection.hpp"
+#include "selection/cable_selection.hpp"
+#include "selection/motor_selection.hpp"
 
 // Core utilities
 #include "core/algorithm_utils.hpp"
