@@ -3,8 +3,10 @@
 #include "address_allocator.hpp"
 
 namespace Tether::SCADA {
+
     // We should hide internal usage in anonymouse namespace
     namespace {
+
         // Internal counters
         std::uint16_t boolOffset = 0;
         std::uint16_t intOffset = 0;
@@ -46,5 +48,4 @@ namespace Tether::SCADA {
             return std::nullopt;
         }
     }
-
 }

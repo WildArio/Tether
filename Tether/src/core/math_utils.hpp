@@ -1,5 +1,6 @@
 #pragma once
 
 namespace Tether::Math{
+
 	double interpolate(double x, double x1, double y1, double x2, double y2);
 }

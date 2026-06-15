@@ -13,5 +13,4 @@ namespace Tether::IO {
 
 	// Parse already opened CSV stream into rows of strings
 	std::vector<std::vector<std::string>> parseCsv(std::ifstream& file);
-
 }

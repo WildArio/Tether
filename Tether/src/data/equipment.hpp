@@ -1,6 +1,7 @@
 #pragma once
 
 namespace Tether::Data {
+
     enum class Characteristic { A, B, C, D };
 
     struct Breaker {

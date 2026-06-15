@@ -8,9 +8,11 @@ namespace Tether::IO {
 
     std::ifstream openCsv(const std::string& path) {
         std::ifstream file(path);
+
         if (!file.is_open()) {
             throw std::runtime_error("Cannot open file: " + path);
         }
+
         return file; // move semantics, NRVO
     }
 
@@ -28,11 +30,9 @@ namespace Tether::IO {
             while (std::getline(ss, field, ',')) {
                 row.push_back(field);
             }
+
             rows.push_back(std::move(row));
         }
         return rows;
     }
-
-
-
 }

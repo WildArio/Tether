@@ -25,10 +25,10 @@ namespace Tether::SCADA {
         case DataType::REAL:  return "REAL";
         case DataType::WORD:  return "WORD";
         case DataType::DWORD: return "DWORD";
+        case DataType::UNKNOWN: return std::nullopt;
         default:
             // Should never happen if enum is used correctly
             return std::nullopt;
         }
     }
-
 }

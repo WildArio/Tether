@@ -4,7 +4,9 @@
 #include "equipment.hpp"
 
 namespace Tether::Data {
+
 	namespace {
+
 		std::vector<Breaker> createBreakerCatalog();
 	}
 

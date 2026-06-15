@@ -43,5 +43,4 @@ namespace Tether::SCADA {
 
         return lines;
     }
-
-} // namespace Tether::SCADA
+}

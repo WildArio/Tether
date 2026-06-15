@@ -8,10 +8,10 @@
 namespace Tether::SCADA {
 
     struct Variable {
-        std::string name;
-        DataType dataType;
-        std::uint16_t modbusAddress;
-        std::string description;
+        std::string name{};
+        DataType dataType{Tether::SCADA::DataType::UNKNOWN};
+        std::uint16_t modbusAddress{};
+        std::string description{};
     };
 
     // Build list of Variable structures from parsed CSV rows.

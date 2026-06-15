@@ -12,7 +12,8 @@ namespace Tether::SCADA {
         UINT,
         REAL,
         WORD,
-        DWORD
+        DWORD,
+        UNKNOWN
     };
 
     // Convert string (e.g., "BOOL") to DataType
@@ -20,5 +21,4 @@ namespace Tether::SCADA {
 
     // Convert DataType to string representation
     std::optional<std::string> dataTypeToString(DataType type);
-
 }
