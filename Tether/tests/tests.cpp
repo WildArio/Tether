@@ -117,7 +117,7 @@ int main() {
 
         auto catalog = Tether::Data::loadMotorCatalog();
         auto result = Tether::Calc::currentByContext(catalog, ctx);
-        double expected = 1500.0 / (380.0 * 0.9 * Tether::Calc::SQRT3 * 0.85);
+        double expected = 1500.0 / (380.0 * 0.9 * Tether::Constants::SQRT3 * 0.85);
         reportTest("Three-phase manual calc", result, expected);
     }
 
