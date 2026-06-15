@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\calc\breaker_selection.cpp" />
-    <ClCompile Include="src\calc\cable_selection.cpp" />
+    <ClCompile Include="src\selection\breaker_selection.cpp" />
+    <ClCompile Include="src\selection\cable_selection.cpp" />
     <ClCompile Include="src\calc\current.cpp" />
-    <ClCompile Include="src\calc\motor_selection.cpp" />
+    <ClCompile Include="src\selection\motor_selection.cpp" />
     <ClCompile Include="src\calc\voltage.cpp" />
     <ClCompile Include="src\core\algorithm_utils.cpp" />
     <ClCompile Include="src\core\io\csv_parser.cpp" />
@@ -36,11 +36,11 @@
     <ClCompile Include="tether.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\calc\breaker_selection.hpp" />
-    <ClInclude Include="src\calc\cable_selection.hpp" />
+    <ClInclude Include="src\selection\breaker_selection.hpp" />
+    <ClInclude Include="src\selection\cable_selection.hpp" />
     <ClInclude Include="src\calc\consts.hpp" />
     <ClInclude Include="src\calc\current.hpp" />
-    <ClInclude Include="src\calc\motor_selection.hpp" />
+    <ClInclude Include="src\selection\motor_selection.hpp" />
     <ClInclude Include="src\calc\voltage.hpp" />
     <ClInclude Include="src\core\algorithm_utils.hpp" />
     <ClInclude Include="src\core\io\csv_parser.hpp" />
