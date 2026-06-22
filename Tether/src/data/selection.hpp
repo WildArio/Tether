@@ -44,10 +44,10 @@ namespace Tether::Data::Detail {
 
 namespace Tether::Data {
 
-    std::optional<Breaker> selectBreaker(const std::vector<Breaker>& catalog, double current, double heatCoef);
+    std::optional<Breaker> selectEquipment(const std::vector<Breaker>& catalog, double current, double heatCoef = 1.0);
 
-	std::optional<Cable> selectCable(const std::vector<Cable>& catalog, double value);
+	std::optional<Cable> selectEquipment(const std::vector<Cable>& catalog, double value);
 
-    std::optional<Motor> selectMotor(const std::vector<Motor>& catalog, double value);
+    std::optional<Motor> selectEquipment(const std::vector<Motor>& catalog, double value);
 }
     
