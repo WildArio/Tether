@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\selection\breaker_selection.cpp">
+    <ClCompile Include="src\calc\breaker_selection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\selection\cable_selection.cpp">
+    <ClCompile Include="src\calc\cable_selection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\calc\current.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\selection\motor_selection.cpp">
+    <ClCompile Include="src\calc\motor_selection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\calc\voltage.cpp">
@@ -62,16 +62,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\selection\breaker_selection.hpp">
+    <ClInclude Include="src\calc\breaker_selection.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\selection\cable_selection.hpp">
+    <ClInclude Include="src\calc\cable_selection.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\calc\current.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\selection\motor_selection.hpp">
+    <ClInclude Include="src\calc\motor_selection.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\calc\voltage.hpp">
