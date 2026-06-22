@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\data\selection.cpp" />
     <ClCompile Include="src\calc\current.cpp" />
     <ClCompile Include="src\calc\voltage.cpp" />
     <ClCompile Include="src\core\algorithm_utils.cpp" />
     <ClCompile Include="src\core\io\csv_parser.cpp" />
     <ClCompile Include="src\core\math_utils.cpp" />
     <ClCompile Include="src\data\catalog.cpp" />
+    <ClCompile Include="src\data\selection.cpp" />
     <ClCompile Include="src\scada\address_allocator.cpp" />
     <ClCompile Include="src\scada\data_type.cpp" />
     <ClCompile Include="src\scada\st_generator.cpp" />
@@ -34,7 +34,6 @@
     <ClCompile Include="tether.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\data\selection.hpp" />
     <ClInclude Include="src\calc\consts.hpp" />
     <ClInclude Include="src\calc\current.hpp" />
     <ClInclude Include="src\calc\voltage.hpp" />
@@ -43,6 +42,7 @@
     <ClInclude Include="src\core\math_utils.hpp" />
     <ClInclude Include="src\data\catalog.hpp" />
     <ClInclude Include="src\data\equipment.hpp" />
+    <ClInclude Include="src\data\selection.hpp" />
     <ClInclude Include="src\scada\address_allocator.hpp" />
     <ClInclude Include="src\scada\data_type.hpp" />
     <ClInclude Include="src\scada\st_generator.hpp" />

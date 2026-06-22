@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\calc\breaker_selection.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\calc\cable_selection.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\calc\current.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\calc\motor_selection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\calc\voltage.cpp">
@@ -60,18 +51,12 @@
     <ClCompile Include="src\scada\variable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\data\selection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\calc\breaker_selection.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\calc\cable_selection.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\calc\current.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\calc\motor_selection.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\calc\voltage.hpp">
@@ -108,6 +93,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\core\io\csv_parser.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\selection.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
