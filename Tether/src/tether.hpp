@@ -3,16 +3,12 @@
 // Data structures
 #include "data/equipment.hpp"
 #include "data/catalog.hpp"
+#include "data/selection.hpp"
 
 // Calculation modules
 #include "calc/consts.hpp"
 #include "calc/current.hpp"
 #include "calc/voltage.hpp"
-
-// Calculation modules
-#include "selection/breaker_selection.hpp"
-#include "selection/cable_selection.hpp"
-#include "selection/motor_selection.hpp"
 
 // Core utilities
 #include "core/algorithm_utils.hpp"
